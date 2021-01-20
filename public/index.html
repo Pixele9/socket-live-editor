@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Live Docs</title>
+
+	<style>	
+		html,body { margin:0; padding:0; height:100%; width:100%; overflow: hidden;}
+
+		#container {
+			height:100%;
+			width:auto;
+			white-space : nowrap;
+			overflow : hidden;
+			position:relative;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+		}
+
+        #content {
+            width: 600px;
+            height: 60%;
+            border-radius: 10px;
+            background-color: #555;
+            color: #fff;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+		body {
+			color: white;
+			font-family: sans-serif;
+		}
+	</style>
+
+</head>
+<body>
+	<div id='container'>
+        <h1>Docs</h1>
+        <textarea id="content"></textarea>
+    </div> 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
